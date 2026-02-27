@@ -1,0 +1,24 @@
+## Interface: 20505
+## Title: BiScore
+## Notes: BiS-progression score for TBC Classic
+## Author: BiScore
+## Version: 0.1.0
+## SavedVariables: BiScoreDB
+## SavedVariablesPerCharacter: BiScoreCharDB
+
+BiScore.lua
+core/phase.lua
+core/scoring.lua
+core/inspect.lua
+data/druid.lua
+data/hunter.lua
+data/mage.lua
+data/paladin.lua
+data/priest.lua
+data/rogue.lua
+data/shaman.lua
+data/warlock.lua
+data/warrior.lua
+ui/tooltip.lua
+ui/charframe.lua
+ui/inspectframe.lua

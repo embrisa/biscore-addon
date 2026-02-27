@@ -1,0 +1,66 @@
+[
+  {
+    "spec_key": "paladin-holy-healer",
+    "covered_specs": [
+      "paladin_holy"
+    ],
+    "findings": [
+      {
+        "severity": "medium",
+        "type": "low_slot_coverage",
+        "phase": 5,
+        "detail": "1 slots (< 14)"
+      },
+      {
+        "severity": "medium",
+        "type": "missing_core_slots_p5",
+        "phase": 5,
+        "detail": "Missing core slots in P5: [1, 3, 5, 7, 16]"
+      },
+      {
+        "severity": "medium",
+        "type": "slot_drop_between_phases",
+        "phase": 5,
+        "detail": "Slots dropped 16 -> 1"
+      },
+      {
+        "severity": "medium",
+        "type": "ranked_item_drop_between_phases",
+        "phase": 5,
+        "detail": "Ranked items dropped 62 -> 11 (82.3%)"
+      }
+    ]
+  },
+  {
+    "spec_key": "paladin-retribution",
+    "covered_specs": [
+      "paladin_retribution"
+    ],
+    "findings": [
+      {
+        "severity": "medium",
+        "type": "low_slot_coverage",
+        "phase": 5,
+        "detail": "1 slots (< 14)"
+      },
+      {
+        "severity": "medium",
+        "type": "missing_core_slots_p5",
+        "phase": 5,
+        "detail": "Missing core slots in P5: [1, 3, 5, 7, 10]"
+      },
+      {
+        "severity": "medium",
+        "type": "slot_drop_between_phases",
+        "phase": 5,
+        "detail": "Slots dropped 16 -> 1"
+      },
+      {
+        "severity": "medium",
+        "type": "ranked_item_drop_between_phases",
+        "phase": 5,
+        "detail": "Ranked items dropped 64 -> 12 (81.2%)"
+      }
+    ]
+  }
+]

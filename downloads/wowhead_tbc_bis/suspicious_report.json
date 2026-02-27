@@ -1,0 +1,268 @@
+[
+  {
+    "spec_key": "druid-balance",
+    "covered_specs": [
+      "druid_balance"
+    ],
+    "findings": [
+      {
+        "severity": "medium",
+        "type": "missing_core_slots_p5",
+        "phase": 5,
+        "detail": "Missing core slots in P5: [16]"
+      },
+      {
+        "severity": "medium",
+        "type": "ranked_item_drop_between_phases",
+        "phase": 2,
+        "detail": "Ranked items dropped 65 -> 35 (46.2%)"
+      }
+    ]
+  },
+  {
+    "spec_key": "druid-feral-combat",
+    "covered_specs": [
+      "druid_feral_dps"
+    ],
+    "findings": [
+      {
+        "severity": "medium",
+        "type": "missing_core_slots_p5",
+        "phase": 5,
+        "detail": "Missing core slots in P5: [1]"
+      }
+    ]
+  },
+  {
+    "spec_key": "druid-healer-shared",
+    "covered_specs": [
+      "druid_restoration"
+    ],
+    "findings": [
+      {
+        "severity": "medium",
+        "type": "missing_core_slots_p5",
+        "phase": 5,
+        "detail": "Missing core slots in P5: [16]"
+      }
+    ]
+  },
+  {
+    "spec_key": "paladin-holy-healer",
+    "covered_specs": [
+      "paladin_holy"
+    ],
+    "findings": [
+      {
+        "severity": "medium",
+        "type": "low_slot_coverage",
+        "phase": 5,
+        "detail": "1 slots (< 14)"
+      },
+      {
+        "severity": "medium",
+        "type": "missing_core_slots_p5",
+        "phase": 5,
+        "detail": "Missing core slots in P5: [1, 3, 5, 7, 16]"
+      },
+      {
+        "severity": "medium",
+        "type": "slot_drop_between_phases",
+        "phase": 5,
+        "detail": "Slots dropped 16 -> 1"
+      },
+      {
+        "severity": "medium",
+        "type": "ranked_item_drop_between_phases",
+        "phase": 5,
+        "detail": "Ranked items dropped 62 -> 11 (82.3%)"
+      }
+    ]
+  },
+  {
+    "spec_key": "paladin-retribution",
+    "covered_specs": [
+      "paladin_retribution"
+    ],
+    "findings": [
+      {
+        "severity": "medium",
+        "type": "low_slot_coverage",
+        "phase": 5,
+        "detail": "1 slots (< 14)"
+      },
+      {
+        "severity": "medium",
+        "type": "missing_core_slots_p5",
+        "phase": 5,
+        "detail": "Missing core slots in P5: [1, 3, 5, 7, 10]"
+      },
+      {
+        "severity": "medium",
+        "type": "slot_drop_between_phases",
+        "phase": 5,
+        "detail": "Slots dropped 16 -> 1"
+      },
+      {
+        "severity": "medium",
+        "type": "ranked_item_drop_between_phases",
+        "phase": 5,
+        "detail": "Ranked items dropped 64 -> 12 (81.2%)"
+      }
+    ]
+  },
+  {
+    "spec_key": "priest-shadow",
+    "covered_specs": [
+      "priest_shadow"
+    ],
+    "findings": [
+      {
+        "severity": "medium",
+        "type": "low_slot_coverage",
+        "phase": 5,
+        "detail": "1 slots (< 14)"
+      },
+      {
+        "severity": "medium",
+        "type": "missing_core_slots_p5",
+        "phase": 5,
+        "detail": "Missing core slots in P5: [1, 3, 5, 7, 10]"
+      },
+      {
+        "severity": "medium",
+        "type": "slot_drop_between_phases",
+        "phase": 5,
+        "detail": "Slots dropped 16 -> 1"
+      },
+      {
+        "severity": "medium",
+        "type": "ranked_item_drop_between_phases",
+        "phase": 5,
+        "detail": "Ranked items dropped 64 -> 15 (76.6%)"
+      }
+    ]
+  },
+  {
+    "spec_key": "rogue-dps-shared",
+    "covered_specs": [
+      "rogue_assassination",
+      "rogue_combat",
+      "rogue_subtlety"
+    ],
+    "findings": [
+      {
+        "severity": "medium",
+        "type": "ranked_item_drop_between_phases",
+        "phase": 2,
+        "detail": "Ranked items dropped 51 -> 22 (56.9%)"
+      }
+    ]
+  },
+  {
+    "spec_key": "shaman-enhancement",
+    "covered_specs": [
+      "shaman_enhancement"
+    ],
+    "findings": [
+      {
+        "severity": "medium",
+        "type": "low_slot_coverage",
+        "phase": 5,
+        "detail": "1 slots (< 14)"
+      },
+      {
+        "severity": "medium",
+        "type": "missing_core_slots_p5",
+        "phase": 5,
+        "detail": "Missing core slots in P5: [1, 3, 5, 7, 16]"
+      },
+      {
+        "severity": "medium",
+        "type": "slot_drop_between_phases",
+        "phase": 5,
+        "detail": "Slots dropped 16 -> 1"
+      },
+      {
+        "severity": "medium",
+        "type": "ranked_item_drop_between_phases",
+        "phase": 5,
+        "detail": "Ranked items dropped 65 -> 24 (63.1%)"
+      }
+    ]
+  },
+  {
+    "spec_key": "shaman-healer-shared",
+    "covered_specs": [
+      "shaman_restoration"
+    ],
+    "findings": [
+      {
+        "severity": "medium",
+        "type": "low_slot_coverage",
+        "phase": 5,
+        "detail": "1 slots (< 14)"
+      },
+      {
+        "severity": "medium",
+        "type": "missing_core_slots_p5",
+        "phase": 5,
+        "detail": "Missing core slots in P5: [1, 3, 5, 7, 16]"
+      },
+      {
+        "severity": "medium",
+        "type": "slot_drop_between_phases",
+        "phase": 5,
+        "detail": "Slots dropped 16 -> 1"
+      },
+      {
+        "severity": "medium",
+        "type": "ranked_item_drop_between_phases",
+        "phase": 5,
+        "detail": "Ranked items dropped 64 -> 16 (75.0%)"
+      }
+    ]
+  },
+  {
+    "spec_key": "warlock-affliction",
+    "covered_specs": [
+      "warlock_affliction"
+    ],
+    "findings": [
+      {
+        "severity": "medium",
+        "type": "missing_core_slots_p5",
+        "phase": 5,
+        "detail": "Missing core slots in P5: [16]"
+      }
+    ]
+  },
+  {
+    "spec_key": "warlock-demonology",
+    "covered_specs": [
+      "warlock_demonology"
+    ],
+    "findings": [
+      {
+        "severity": "medium",
+        "type": "missing_core_slots_p5",
+        "phase": 5,
+        "detail": "Missing core slots in P5: [16]"
+      }
+    ]
+  },
+  {
+    "spec_key": "warlock-dps-shared",
+    "covered_specs": [
+      "warlock_destruction"
+    ],
+    "findings": [
+      {
+        "severity": "medium",
+        "type": "missing_core_slots_p5",
+        "phase": 5,
+        "detail": "Missing core slots in P5: [16]"
+      }
+    ]
+  }
+]

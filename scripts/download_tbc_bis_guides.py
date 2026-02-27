@@ -224,13 +224,50 @@ def sanitize_slug(value: str) -> str:
     return slug or "unknown"
 
 
+WINDOWS_INVALID_FILENAME_CHARS = re.compile(r'[<>:"/\\|?*\x00-\x1f]')
+WINDOWS_RESERVED_NAMES = {
+    "con",
+    "prn",
+    "aux",
+    "nul",
+    "com1",
+    "com2",
+    "com3",
+    "com4",
+    "com5",
+    "com6",
+    "com7",
+    "com8",
+    "com9",
+    "lpt1",
+    "lpt2",
+    "lpt3",
+    "lpt4",
+    "lpt5",
+    "lpt6",
+    "lpt7",
+    "lpt8",
+    "lpt9",
+}
+
+
+def sanitize_filename_component(value: str) -> str:
+    cleaned = WINDOWS_INVALID_FILENAME_CHARS.sub("_", value)
+    cleaned = cleaned.strip().strip(".")
+    if not cleaned:
+        return "unknown"
+    if cleaned.lower() in WINDOWS_RESERVED_NAMES:
+        return f"_{cleaned}"
+    return cleaned
+
+
 def safe_filename_for_url(url: str) -> str:
     parsed = urllib.parse.urlparse(url)
-    path = parsed.path.strip("/")
-    if not path:
+    path_parts = [p for p in parsed.path.split("/") if p]
+    if not path_parts:
         name = "index"
     else:
-        name = path.replace("/", "__")
+        name = "__".join(sanitize_filename_component(p) for p in path_parts)
     if parsed.query:
         name += "__q_" + sanitize_slug(parsed.query)
     return f"{name}.html"
